@@ -13,10 +13,16 @@ app.get('/', (req,res)=>{
     })
 })
 
+arr1=[23,34,55,76,12]
 
+var vl=0;
 app.get('/about',(req,res)=>{
   res.render('about',{
-    arr:['Gagan', 'Oberoi','123','456']
+   arr:arr1,
+   arr_sum:arr1.forEach(function(num){
+      vl=vl+num;
+   }),
+   arr_sum:vl
   })
 })
 

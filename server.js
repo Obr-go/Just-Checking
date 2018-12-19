@@ -13,7 +13,7 @@ app.get('/', (req,res)=>{
     })
 })
 
-arr1=[23,34,55,76]
+arr1=[23,34,55,76,33]
 
 var vl=0;
 app.get('/about',(req,res)=>{
